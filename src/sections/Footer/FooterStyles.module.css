@@ -1,0 +1,19 @@
+.container {
+  text-align: center;
+  p {
+    font-size: 16px;
+    color: var(--footer-text-color);
+  }
+}
+
+.iconLink {
+  text-decoration: none;
+  border-bottom: 1px solid #777;
+  padding-bottom: 1px;
+  color: inherit;
+  transition: border-color 0.3s;
+}
+
+.iconLink:hover {
+  border-bottom-color: #fff;
+}
