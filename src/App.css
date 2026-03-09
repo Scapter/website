@@ -39,7 +39,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center; /* Kartları içerde ortalar */
-  justify-content: space-between;
 }
 
 li a:hover {
@@ -112,12 +111,5 @@ p {
 
   .sectionTitle {
     margin-bottom: 75px;
-  }
-}
-/* Telefonlar için (768px altı) */
-@media (max-width: 768px) {
-  .hero-container {
-    flex-direction: column; /* Yan yana duranları alt alta alır */
-    text-align: center; /* Yazıları ortalar */
   }
 }
