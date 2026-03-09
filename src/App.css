@@ -113,3 +113,10 @@ p {
     margin-bottom: 75px;
   }
 }
+/* Telefonlar için (768px altı) */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column; /* Yan yana duranları alt alta alır */
+    text-align: center; /* Yazıları ortalar */
+  }
+}
