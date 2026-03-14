@@ -91,7 +91,7 @@ p {
   cursor: pointer;
 }
 
-@media (width >= 10px) {
+@media (width >= 1400px) {
   .main-content {
     gap: 200px;
   }
@@ -111,5 +111,33 @@ p {
 
   .sectionTitle {
     margin-bottom: 75px;
+  }
+}
+
+/* Mobil için özel ayarlar (0 ile 768px arası ekranlar) */
+@media (max-width: 768px) {
+  .main-content {
+    /* PC'de 200px olan boşluğu mobilde 40px'e düşürür */
+    gap: 40px;
+    padding: 0 15px; /* Kenarlara yapışmasını engeller */
+  }
+
+  h1 {
+    font-size: 28px; /* PC'deki 48px mobilde çok büyük kaçar */
+  }
+
+  p,
+  ul,
+  h2,
+  h3 {
+    font-size: 16px; /* Telefon ekranı için ideal okunabilirlik */
+  }
+
+  .main-content * {
+    max-width: 100%; /* İçerideki hiçbir şey ekranı aşamaz */
+  }
+
+  .sectionTitle {
+    margin-bottom: 20px;
   }
 }
