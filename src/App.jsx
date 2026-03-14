@@ -5,12 +5,16 @@ import Projects from "./sections/Projects/Projects";
 import Skills from "./sections/Skills/Skills";
 import Footer from "./sections/Footer/Footer";
 import Header from "./sections/Header/Header";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
 
 function App() {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
   return (
     <>
-      <Header />
+      {/* Header'a "Sen şu an mobildesin/değilsin" bilgisini gönderiyoruz */}
+      <Header isMobile={isMobile} />
+
       <main className="main-content">
         <Hero />
         <Projects />
