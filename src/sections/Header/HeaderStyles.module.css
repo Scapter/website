@@ -58,7 +58,10 @@ li:hover {
   .container {
     flex-direction: column; /* Yan yana olan elemanları alt alta diz */
   }
-  .navList a {
-    margin-right: 15px;
+  .navList {
+    margin-right: 155px;
+  }
+  .headerWrapper {
+    width: 100vw;
   }
 }
