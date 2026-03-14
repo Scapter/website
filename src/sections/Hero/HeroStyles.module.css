@@ -105,3 +105,10 @@
     }
   }
 }*/
+
+/* Telefonlar için (genellikle 768px ve altı) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Yan yana olan elemanları alt alta diz */
+  }
+}

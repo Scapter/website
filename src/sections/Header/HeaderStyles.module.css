@@ -16,13 +16,13 @@
 }
 
 .headerWrapper {
-  width: 100vw; /* vw yerine % kullanıyoruz */
+  width: 99vw; /* vw yerine % kullanıyoruz */
   background-color: var(--header-background-color);
 }
 
 ul a {
   text-decoration: none; /* Alt çizgiyi kaldırır */
-  color: inherit; /* Rengi üstteki etiketten (h3'ten) miras almasını sağlar */
+  color: inherit;
   margin-right: 25px;
 }
 
@@ -51,4 +51,14 @@ li:hover {
 .sun {
   width: 30px;
   height: 30px;
+}
+
+/* Telefonlar için (genellikle 768px ve altı) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Yan yana olan elemanları alt alta diz */
+  }
+  .navList a {
+    margin-right: 15px;
+  }
 }
