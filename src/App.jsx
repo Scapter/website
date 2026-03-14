@@ -5,6 +5,7 @@ import Projects from "./sections/Projects/Projects";
 import Skills from "./sections/Skills/Skills";
 import Footer from "./sections/Footer/Footer";
 import Header from "./sections/Header/Header";
+import { useMediaQuery } from "react-responsive";
 
 function App() {
   return (
