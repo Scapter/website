@@ -91,7 +91,7 @@ p {
   cursor: pointer;
 }
 
-@media (width >= 1400px) {
+@media (width >= 10px) {
   .main-content {
     gap: 200px;
   }

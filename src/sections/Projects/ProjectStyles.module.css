@@ -36,3 +36,9 @@
     padding: 0 30px;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Yan yana olan elemanları alt alta diz */
+  }
+}
