@@ -34,7 +34,7 @@ function Hero() {
           Emirhan <br /> Yerlikaya{" "}
         </h1>
 
-        <h2>Full-Stack DeveloperFGSFG</h2>
+        <h2>Full-Stack Developer</h2>
         <span>
           <a
             href="https://x.com/Emirhan82015720"
