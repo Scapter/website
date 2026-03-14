@@ -8,13 +8,9 @@ import Header from "./sections/Header/Header";
 // import { useMediaQuery } from "react-responsive";
 
 function App() {
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
-
   return (
     <>
-      {/* Header'a "Sen şu an mobildesin/değilsin" bilgisini gönderiyoruz */}
-      <Header isMobile={isMobile} />
-
+      <Header />
       <main className="main-content">
         <Hero />
         <Projects />
