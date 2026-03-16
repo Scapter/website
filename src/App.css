@@ -120,6 +120,7 @@ p {
     /* PC'de 200px olan boşluğu mobilde 40px'e düşürür */
     gap: 40px;
     padding: 0 15px; /* Kenarlara yapışmasını engeller */
+    max-width: 768px;
   }
 
   h1 {

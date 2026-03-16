@@ -16,7 +16,7 @@
 }
 
 .headerWrapper {
-  width: 100vw; /* vw yerine % kullanıyoruz */
+  width: 99vw; /* vw yerine % kullanıyoruz */
   background-color: var(--header-background-color);
 }
 
