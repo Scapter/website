@@ -106,15 +106,23 @@
   }
 }*/
 
-/* Telefonlar için (genellikle 768px ve altı) */
 @media (max-width: 768px) {
   .container {
-    height: 150dvh;
+    /* Sabit height yerine bunu kullan: */
+    min-height: 100dvh;
+    height: auto;
 
-    flex-direction: column; /* Yan yana olan elemanları alt alta diz */
+    flex-direction: column;
+    justify-content: flex-start; /* Elemanları en tepeden dizmeye başla */
+    padding-top: 100px; /* Header'ın altında kalmamak için güvenli boşluk */
+    padding-bottom: 50px; /* En altta biraz nefes payı */
+    gap: 30px; /* Elemanların arasına standart boşluk koy */
   }
+
   .hero {
-    width: 350px;
+    /* 350px sabit genişlik yerine: */
+    width: 100%;
+    max-width: 320px; /* Küçük telefonlarda taşmayı engeller */
     height: auto;
   }
 }
