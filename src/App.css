@@ -119,7 +119,7 @@ p {
   .main-content {
     /* PC'de 200px olan boşluğu mobilde 40px'e düşürür */
     gap: 100px;
-    padding: 0 15px; /* Kenarlara yapışmasını engeller */
+    /* Kenarlara yapışmasını engeller */
   }
 
   h1 {
