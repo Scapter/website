@@ -109,6 +109,8 @@
 /* Telefonlar için (genellikle 768px ve altı) */
 @media (max-width: 768px) {
   .container {
+    height: 120dvh;
+
     flex-direction: column; /* Yan yana olan elemanları alt alta diz */
   }
   .hero {
