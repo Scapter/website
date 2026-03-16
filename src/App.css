@@ -34,7 +34,7 @@ header {
 
 .main-content {
   width: 100%;
-  max-width: 1080px;
+  max-width: 100%;
   margin: 0 auto; /* Sayfayı ortalayan asıl kahraman budur */
   display: flex;
   flex-direction: column;
@@ -120,7 +120,6 @@ p {
     /* PC'de 200px olan boşluğu mobilde 40px'e düşürür */
     gap: 40px;
     padding: 0 15px; /* Kenarlara yapışmasını engeller */
-    max-width: 768px;
   }
 
   h1 {
