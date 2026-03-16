@@ -111,4 +111,9 @@
   .container {
     flex-direction: column; /* Yan yana olan elemanları alt alta diz */
   }
+  .hero {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }
