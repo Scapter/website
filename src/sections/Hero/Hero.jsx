@@ -8,7 +8,7 @@ import githubDark from "../../assets/github-dark.svg";
 import githubLight from "../../assets/github-light.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
-import CV from "../../../public/cv.pdf";
+import CV from "/cv.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
@@ -66,7 +66,7 @@ function Hero() {
           the lead designer and frontend developer for 'Let's Cook', a 2D mobile
           restaurant management game
         </p>
-        <a href="../../../public/cv.pdf" download>
+        <a href={CV} download>
           <button className="hover">resume</button>
         </a>
       </div>
