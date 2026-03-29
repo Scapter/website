@@ -10,6 +10,7 @@ import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 import CV from "/cv.pdf";
 import { useTheme } from "../../common/ThemeContext";
+import { useTranslation, Trans } from "react-i18next";
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
@@ -18,6 +19,7 @@ function Hero() {
   const twitterIcon = theme === "light" ? twitterLight : twitterDark;
   const githubIcon = theme === "light" ? githubLight : githubDark;
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
+  const { t } = useTranslation();
 
   return (
     <section id="hero" className={styles.container}>
@@ -34,7 +36,7 @@ function Hero() {
           Emirhan <br /> Yerlikaya{" "}
         </h1>
 
-        <h2>Full-Stack Developer</h2>
+        <h2>{t("hero.title")}</h2>
         <span>
           <a
             href="https://x.com/Emirhan82015720"
@@ -59,15 +61,14 @@ function Hero() {
           </a>
         </span>
 
-        <p className={styles.description}>
-          Hi! <br /> A first-year Software Engineering student at Manisa Celal
-          Bayar University. I've been passionate about software since my
-          childhood. Currently, I am channeling this passion into Game Art. I am
-          the lead designer and frontend developer for 'Let's Cook', a 2D mobile
-          restaurant management game
-        </p>
+        <Trans
+          i18nKey="hero.description"
+          parent="p" // Çeviriyi bir <p> etiketi içine koyar
+          className={styles.description} // Senin CSS sınıfını buraya ekler
+        />
+
         <a href={CV} download>
-          <button className="hover">resume</button>
+          <button className="hover">{t("hero.resume")}</button>
         </a>
       </div>
     </section>

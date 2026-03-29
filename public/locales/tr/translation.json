@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "home": "Anasayfa",
+    "projects": "Projeler",
+    "skills": "Yetenekler",
+    "contact": "İletişim"
+  },
+
+  "hero": {
+    "title": "Full-Stack Geliştirici",
+    "description": "Merhaba! <br/>  Manisa Celal Bayar Üniversitesi Yazılım Mühendisliği 1. sınıf öğrencisiyim. Çocukluğumdan beri yazılıma karşı büyük bir tutku besliyorum. Şu an bu tutkumu 'Game Art' (Oyun Sanatı) alanına yönlendirmiş durumdayım. 2D mobil restoran yönetimi oyunu olan 'Let's Cook' projesinde tasarım lideri ve frontend geliştirici olarak yer alıyorum.",
+    "resume": "Özgeçmiş"
+  },
+
+  "projects": {
+    "Projects": "Projeler",
+    "FitnessProject": "Fitness Projesi"
+  },
+
+  "skills": {
+    "Skills": "Yetenekler"
+  },
+
+  "contact": {
+    "name": "İsminiz",
+    "email": "E-posta",
+    "message": "Mesajınız",
+    "Contact": "Iletisim",
+    "submit": "Gönder"
+  },
+
+  "footer": {
+    "cpy": "Tüm hakları saklıdır"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "title": "Full-Stack Developer",
+    "description": "Hi! <br/> A first-year Software Engineering student at Manisa Celal Bayar University. I've been passionate about software since my childhood. Currently, I am channeling this passion into Game Art. I am the lead designer and frontend developer for 'Let's Cook', a 2D mobile restaurant management game",
+    "resume": "resume"
+  },
+
+  "projects": {
+    "Projects": "Projects",
+    "FitnessProject": "Fitness Project"
+  },
+
+  "skills": {
+    "Skills": "Skills"
+  },
+
+  "contact": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "Contact": "Contact",
+    "submit": "Submit"
+  },
+
+  "footer": {
+    "cpy": "All rights reserved"
+  }
+}

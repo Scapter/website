@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import styles from "./ContactStyles.module.css";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
   const [status, setStatus] = useState(""); // Gönderim durumunu tutmak için
+  const { t } = useTranslation();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -33,7 +35,7 @@ function Contact() {
 
   return (
     <section id="contact" className={styles.container}>
-      <h1 className="sectionTitle">Contact</h1>
+      <h1 className="sectionTitle">{t("contact.Contact")} </h1>
 
       <form onSubmit={handleSubmit}>
         {/* Spam Koruması: Botlar bunu doldurur, insanlar görmez */}
@@ -41,36 +43,36 @@ function Contact() {
 
         <div className="formGroup">
           <label htmlFor="name" hidden>
-            Name
+            name
           </label>
           <input
             type="text"
             name="name"
             id="name"
-            placeholder="Name"
+            placeholder={t("contact.name")}
             required
           />
         </div>
         <div className="formGroup">
           <label htmlFor="email" hidden>
-            Email
+            email
           </label>
           <input
             type="email"
             name="email"
             id="email"
-            placeholder="Email"
+            placeholder={t("contact.email")}
             required
           />
         </div>
         <div className="formGroup">
           <label htmlFor="message" hidden>
-            Message
+            message
           </label>
           <textarea
             name="message"
             id="message"
-            placeholder="Message"
+            placeholder={t("contact.message")}
             required
           ></textarea>
         </div>
@@ -78,7 +80,7 @@ function Contact() {
         <input
           className="hover btn"
           type="submit"
-          value="Submit"
+          value={t("contact.submit")}
           disabled={status === "Sending..."}
         />
 
