@@ -16,6 +16,7 @@ function Header() {
   const { t, i18n } = useTranslation(); // t ve i18n objelerini aldık
   const [isLangOpen, setIsLangOpen] = useState(false); // Dropdown kontrolü
 
+  const isTR = i18n.language === "tr";
   const themeIcon = theme === "light" ? sun : moon;
   const twitterIcon = theme === "light" ? twitterLight : twitterDark;
   const githubIcon = theme === "light" ? githubLight : githubDark;
@@ -27,7 +28,7 @@ function Header() {
   };
 
   return (
-    <nav className={styles.headerWrapper}>
+    <nav className={`${styles.headerWrapper} ${isTR ? styles.tr : ""}`}>
       <div className={styles.container}>
         <ul className={styles.navList}>
           {/* Metinleri t() içine aldık */}

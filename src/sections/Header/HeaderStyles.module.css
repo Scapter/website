@@ -64,6 +64,9 @@ li:hover {
   .headerWrapper {
     width: 100vw;
   }
+  :global(.tr) .navList a {
+    margin-right: 5px; /* Değeri düşürerek yer kazanalım */
+  }
 }
 
 .controls {
