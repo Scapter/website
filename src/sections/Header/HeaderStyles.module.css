@@ -65,21 +65,21 @@ li:hover {
     width: 100vw;
   }
   .navList.tr a {
-    margin-right: 21px;
+    margin-right: 23px;
     font-size: 15px;
     letter-spacing: -0.5px;
   }
   .navList.tr {
-    margin-left: 150px;
+    margin-left: 173px;
   }
-  .langBtn.tr {
-    padding: 3px 6px;
+  .langBtn {
+    padding: 3px 6px !important;
   }
-  .sun.tr {
+  .sun {
     width: 25px;
     height: 25x;
   }
-  .moon.tr {
+  .moon {
     width: 25px;
     height: 25x;
   }

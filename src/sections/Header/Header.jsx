@@ -52,7 +52,7 @@ function Header() {
           {/* DİL DROPDOWN BAŞLANGIÇ */}
           <div className={styles.langDropdown}>
             <button
-              className={`${styles.langBtn} ${isTR ? styles.tr : ""}`}
+              className={styles.langBtn}
               onClick={() => setIsLangOpen(!isLangOpen)}
             >
               {i18n.language.toUpperCase()} ▾
@@ -70,7 +70,7 @@ function Header() {
             <img
               src={themeIcon}
               alt="Color mode icon"
-              className={`${theme === "light" ? styles.sun : styles.moon} ${isTR ? styles.tr : ""}`}
+              className={theme === "light" ? styles.sun : styles.moon}
               onClick={toggleTheme}
             />
           </div>
