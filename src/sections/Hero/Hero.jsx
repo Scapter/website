@@ -9,6 +9,7 @@ import githubLight from "../../assets/github-light.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 import CV from "/cv.pdf";
+import CV2 from "/cv-tr.pdf";
 import { useTheme } from "../../common/ThemeContext";
 import { useTranslation, Trans } from "react-i18next";
 
@@ -19,8 +20,9 @@ function Hero() {
   const twitterIcon = theme === "light" ? twitterLight : twitterDark;
   const githubIcon = theme === "light" ? githubLight : githubDark;
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
-  const { t } = useTranslation();
-
+  const { t, i18n } = useTranslation();
+  const isTR = i18n.language === "tr";
+  const cvPath = isTR ? CV2 : CV;
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
@@ -67,8 +69,8 @@ function Hero() {
           className={styles.description} // Senin CSS sınıfını buraya ekler
         />
 
-        <a href={CV} download>
-          <button className="hover">{t("hero.resume")}</button>
+        <a href={cvPath} download>
+          <button className="hover">{isTR ? "Özgeçmiş" : "resume"}</button>
         </a>
       </div>
     </section>

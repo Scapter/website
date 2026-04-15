@@ -28,9 +28,9 @@ function Header() {
   };
 
   return (
-    <nav className={`${styles.headerWrapper} ${isTR ? styles.tr : ""}`}>
+    <nav className={styles.headerWrapper}>
       <div className={styles.container}>
-        <ul className={styles.navList}>
+        <ul className={`${styles.navList} ${isTR ? styles.tr : ""}`}>
           {/* Metinleri t() içine aldık */}
           <li>
             <a href="#hero">{t("nav.home")}</a>
@@ -52,7 +52,7 @@ function Header() {
           {/* DİL DROPDOWN BAŞLANGIÇ */}
           <div className={styles.langDropdown}>
             <button
-              className={styles.langBtn}
+              className={`${styles.langBtn} ${isTR ? styles.tr : ""}`}
               onClick={() => setIsLangOpen(!isLangOpen)}
             >
               {i18n.language.toUpperCase()} ▾
@@ -70,7 +70,7 @@ function Header() {
             <img
               src={themeIcon}
               alt="Color mode icon"
-              className={theme === "light" ? styles.sun : styles.moon}
+              className={`${theme === "light" ? styles.sun : styles.moon} ${isTR ? styles.tr : ""}`}
               onClick={toggleTheme}
             />
           </div>

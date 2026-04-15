@@ -64,8 +64,24 @@ li:hover {
   .headerWrapper {
     width: 100vw;
   }
-  :global(.tr) .navList a {
-    margin-right: 5px; /* Değeri düşürerek yer kazanalım */
+  .navList.tr a {
+    margin-right: 21px;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+  }
+  .navList.tr {
+    margin-left: 150px;
+  }
+  .langBtn.tr {
+    padding: 3px 6px;
+  }
+  .sun.tr {
+    width: 25px;
+    height: 25x;
+  }
+  .moon.tr {
+    width: 25px;
+    height: 25x;
   }
 }
 
