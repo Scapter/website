@@ -55,7 +55,7 @@ function Hero() {
             <img src={githubIcon} alt="Github icon" />
           </a>
           <a
-            href="https://www.linkedin.com/in/emirhan-yerlikaya-4342b61b5"
+            href="www.linkedin.com/in/emirhan-yerlikaya"
             target="_blank"
             rel="noopener noreferrer"
           >
